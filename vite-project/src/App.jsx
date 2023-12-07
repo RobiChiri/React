@@ -13,7 +13,7 @@ export function App() {
       <Hello />
       <Welcome name="John" age={17} />
       <AlertClock eventHandler={handleButtonClick} />
-      <Counter initialValue={0} increment={3} />
+      <Counter initialValue={0} increment={3} decrement={2} />
     </div>
   );
 }
