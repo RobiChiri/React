@@ -1,6 +1,7 @@
 import { Hello } from "./Hello";
 import { Welcome } from "./Welcome";
 import { AlertClock } from "./AlertClock";
+import { Counter } from "./Counter";
 
 export function App() {
   function handleButtonClick() {
@@ -11,7 +12,8 @@ export function App() {
     <div>
       <Hello />
       <Welcome name="John" age={17} />
-      <AlertClock onClick={handleButtonClick} />
+      <AlertClock eventHandler={handleButtonClick} />
+      <Counter initialValue={0} increment={3} />
     </div>
   );
 }
