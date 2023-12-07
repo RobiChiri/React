@@ -5,9 +5,7 @@ export function Welcome({ name }) {
   return (
     <div>
       <p>Welcome, {name}!</p>
-      <p>
-        <Age />
-      </p>
+      <p>{<Age age={20} />}</p>
     </div>
   );
 }
