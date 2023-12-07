@@ -11,7 +11,7 @@ export function App() {
     <div>
       <Hello />
       <Welcome name="John" age={17} />
-      <AlertClock onClick={handleButtonClick} />
+      <AlertClock eventHandler={handleButtonClick} />
     </div>
   );
 }
