@@ -4,7 +4,8 @@ import { AlertClock } from "./AlertClock";
 import { Counter } from "./Counter";
 import { Clock } from "./Clock";
 import { MouseClicker } from "./MouseClicker";
-import { InteractiveWelcome } from "./INteractiveWelcome";
+import { InteractiveWelcome } from "./InteractiveWelcome";
+import { Login } from "./Login";
 
 export function App() {
   function handleButtonClick() {
@@ -20,6 +21,7 @@ export function App() {
       <Clock />
       <MouseClicker />
       <InteractiveWelcome />
+      <Login />
     </div>
   );
 }
