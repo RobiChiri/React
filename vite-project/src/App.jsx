@@ -6,6 +6,7 @@ import { Clock } from "./Clock";
 import { MouseClicker } from "./MouseClicker";
 import { InteractiveWelcome } from "./InteractiveWelcome";
 import { Login } from "./Login";
+import { UncontrolledForm } from "./UncontrolledForm";
 
 export function App() {
   function handleButtonClick() {
@@ -26,6 +27,7 @@ export function App() {
       <MouseClicker />
       <InteractiveWelcome />
       <Login onLogin={onLogin} />
+      <UncontrolledForm />
     </div>
   );
 }
