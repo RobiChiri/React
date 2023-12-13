@@ -12,6 +12,10 @@ export function App() {
     const now = new Date();
     alert(now.toLocaleTimeString());
   }
+
+  function onLogin(data) {
+    console.log(data);
+  }
   return (
     <div>
       <Hello />
@@ -21,7 +25,7 @@ export function App() {
       <Clock />
       <MouseClicker />
       <InteractiveWelcome />
-      <Login />
+      <Login onLogin={onLogin} />
     </div>
   );
 }
