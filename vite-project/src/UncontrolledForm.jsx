@@ -3,7 +3,7 @@ export function UncontrolledForm() {
     event.preventDefault();
 
     const formData = new FormData();
-    event.target;
+
 
     const data = {
       username: formData.get("username"),
