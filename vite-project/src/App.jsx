@@ -7,7 +7,9 @@
 // import { InteractiveWelcome } from "./InteractiveWelcome";
 // import { Login } from "./Login";
 // import { UncontrolledForm } from "./UncontrolledForm";
-import { FocusableInput } from "./FocusableInput";
+// import { FocusableInput } from "./FocusableInput";
+import { StrictModeComponent } from "./StrictModeComponent";
+import { StrictMode } from "react";
 
 export function App() {
   // function handleButtonClick() {
@@ -29,7 +31,10 @@ export function App() {
       <InteractiveWelcome />
       <Login onLogin={onLogin} />
       <UncontrolledForm /> */}
-      <FocusableInput />
+      {/* <FocusableInput /> */}
+      <StrictMode>
+        <StrictModeComponent />
+      </StrictMode>
     </div>
   );
 }
