@@ -1,5 +1,5 @@
 // import { Hello } from "./Hello";
-// import { Welcome } from "./Welcome";
+import { Welcome } from "./Welcome";
 // import { AlertClock } from "./AlertClock";
 // import { Counter } from "./Counter";
 // import { Clock } from "./Clock";
@@ -11,7 +11,7 @@
 // import { StrictModeComponent } from "./StrictModeComponent";
 // import { StrictMode } from "react";
 
-import { TodoList } from "./TodoList";
+// import { TodoList } from "./TodoList";
 
 export function App() {
   // function handleButtonClick() {
@@ -24,9 +24,9 @@ export function App() {
   // }
   return (
     <div>
-      {/* <Hello />
+      {/* <Hello /> */}
       <Welcome name="John" age={17} />
-      <AlertClock eventHandler={handleButtonClick} /> */}
+      {/* <AlertClock eventHandler={handleButtonClick} /> */}
       {/* <Counter initialValue={0} increment={1} decrement={1} /> */}
       {/* <Clock />
       <MouseClicker />
@@ -37,7 +37,7 @@ export function App() {
       {/* <StrictMode>
         <StrictModeComponent />
       </StrictMode> */}
-      <TodoList />
+      {/* <TodoList /> */}
     </div>
   );
 }
