@@ -1,15 +1,15 @@
 // import { Hello } from "./Hello";
 // import { Welcome } from "./Welcome";
 // import { AlertClock } from "./AlertClock";
-// import { Counter } from "./Counter";
+import { Counter } from "./Counter";
 // import { Clock } from "./Clock";
 // import { MouseClicker } from "./MouseClicker";
 // import { InteractiveWelcome } from "./InteractiveWelcome";
 // import { Login } from "./Login";
 // import { UncontrolledForm } from "./UncontrolledForm";
 // import { FocusableInput } from "./FocusableInput";
-import { StrictModeComponent } from "./StrictModeComponent";
-import { StrictMode } from "react";
+// import { StrictModeComponent } from "./StrictModeComponent";
+// import { StrictMode } from "react";
 
 export function App() {
   // function handleButtonClick() {
@@ -24,17 +24,17 @@ export function App() {
     <div>
       {/* <Hello />
       <Welcome name="John" age={17} />
-      <AlertClock eventHandler={handleButtonClick} />
-      <Counter initialValue={0} increment={3} decrement={2} />
-      <Clock />
+      <AlertClock eventHandler={handleButtonClick} /> */}
+      <Counter initialValue={0} increment={1} decrement={1} />
+      {/* <Clock />
       <MouseClicker />
       <InteractiveWelcome />
       <Login onLogin={onLogin} />
       <UncontrolledForm /> */}
       {/* <FocusableInput /> */}
-      <StrictMode>
+      {/* <StrictMode>
         <StrictModeComponent />
-      </StrictMode>
+      </StrictMode> */}
     </div>
   );
 }
