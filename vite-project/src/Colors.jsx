@@ -1,6 +1,6 @@
+/* eslint-disable react/prop-types */
 import { Color } from "./Color";
 
-// eslint-disable-next-line react/prop-types
 export function Colors({ colors }) {
   return (
     <ul>
