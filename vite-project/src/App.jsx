@@ -14,7 +14,8 @@
 // import { StrictMode } from "react";
 // import {Container} from "./Container"
 
-import { GithubUser } from "./GithubUser";
+// import { GithubUser } from "./GithubUser";
+import { GithubUsers } from "./GithubUsers";
 
 // import { TodoList } from "./TodoList";
 
@@ -36,7 +37,8 @@ export function App() {
   // }
   return (
     <div>
-      <GithubUser username="RobiChiri" />
+      <GithubUsers />
+      {/* <GithubUser username="RobiChiri" /> */}
       {/* <select defaultValue="language">
        <option onChange={()=>handleSetLanguage("en")}>EN</option> 
        <option onChange={()=>handleSetLanguage("it")}>IT</option> 
