@@ -7,14 +7,14 @@
 // import { LanguageContext } from "./LanguageContext";
 // import { MouseClicker } from "./MouseClicker";
 // import { InteractiveWelcome } from "./InteractiveWelcome";
-import { Login } from "./Login";
+// import { Login } from "./Login";
 // import { UncontrolledForm } from "./UncontrolledForm";
 // import { FocusableInput } from "./FocusableInput";
 // import { StrictModeComponent } from "./StrictModeComponent";
 // import { StrictMode } from "react";
 // import {Container} from "./Container"
 
-// import { GithubUser } from "./GithubUser";
+import { GithubUser } from "./GithubUser";
 // import { GithubUsers } from "./GithubUsers";
 
 // import { TodoList } from "./TodoList";
@@ -39,7 +39,7 @@ export function App() {
     <div>
       {/* <Counter /> */}
       {/* <GithubUsers /> */}
-      {/* <GithubUser username="RobiChiri" /> */}
+      <GithubUser username="RobiChiri" />
       {/* <select defaultValue="language">
        <option onChange={()=>handleSetLanguage("en")}>EN</option> 
        <option onChange={()=>handleSetLanguage("it")}>IT</option> 
@@ -53,7 +53,7 @@ export function App() {
 {/* 
       <MouseClicker />
       <InteractiveWelcome /> */}
-      <Login/>
+      {/* <Login/> */}
       {/* <UncontrolledForm /> */}
       {/* <FocusableInput /> */}
       {/* <StrictMode>
