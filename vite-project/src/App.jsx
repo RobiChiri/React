@@ -34,9 +34,9 @@ export function App() {
   }
   return (
     <div>
-      <select defaultValue="language">
-       <option onChange={()=>handleSetLanguage("en")}>EN</option> 
-       <option onChange={()=>handleSetLanguage("it")}>IT</option> 
+      <select>
+        <option onChange={() => handleSetLanguage("en")}>EN</option>
+        <option onChange={() => handleSetLanguage("it")}>IT</option>
       </select>
       <LanguageContext.Provider value={language}>
         <Clock />
