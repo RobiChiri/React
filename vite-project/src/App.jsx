@@ -1,7 +1,7 @@
 // import { Hello } from "./Hello";
 // import { Welcome } from "./Welcome";
 // import { AlertClock } from "./AlertClock";
-// import { Counter } from "./Counter";
+import { Counter } from "./Counter";
 // import { useState } from "react";
 // import { Clock } from "./Clock";
 // import { LanguageContext } from "./LanguageContext";
@@ -15,7 +15,7 @@
 // import {Container} from "./Container"
 
 // import { GithubUser } from "./GithubUser";
-import { GithubUsers } from "./GithubUsers";
+// import { GithubUsers } from "./GithubUsers";
 
 // import { TodoList } from "./TodoList";
 
@@ -37,7 +37,8 @@ export function App() {
   // }
   return (
     <div>
-      <GithubUsers />
+      <Counter />
+      {/* <GithubUsers /> */}
       {/* <GithubUser username="RobiChiri" /> */}
       {/* <select defaultValue="language">
        <option onChange={()=>handleSetLanguage("en")}>EN</option> 
@@ -59,9 +60,7 @@ export function App() {
         <StrictModeComponent />
       </StrictMode> */}
       {/* <TodoList /> */}
-      {/* <Container title={"Container exercise title"}>
-        <Counter initialValue={0} increment={1} decrement={1} />
-      </Container> */}
+      {/* <Container title={"Container exercise title"}></Container> */}
     </div>
   );
 }
