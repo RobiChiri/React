@@ -1,64 +1,30 @@
-import { useState } from "react";
+import { useForm } from "./useForm";
 
-export function Login(props) {
-  const [data, setData] = useState({
-    username: "",
-    password: "",
-    session: false,
-  });
-
-  function handleChangeInputData(event) {
-    const name = event.target.name;
-    const value = event.target.value;
-    const checked = event.target.checked;
-    const type = event.target.type;
-
-    setData((d) => {
-      return {
-        ...d,
-        [name]: type == "checkbox" ? checked : value,
-      };
-    });
-  }
-
-  function handleLogin(event) {
-    event.preventDefault();
-    // eslint-disable-next-line react/prop-types
-    props.onLogin(data);
-  }
-
-  function handleReset() {
-    setData({
-      username: " ",
-      password: " ",
-    });
-  }
+export function Login() {
+  const { username, password, session, onDataChange, onSubmit, onReset } =
+    useForm();
 
   return (
     <div>
-      <form onSubmit={handleLogin}>
-        <input
-          name="username"
-          value={data.username}
-          onChange={handleChangeInputData}
-        />
+      <form onSubmit={onSubmit}>
+        <input name="username" value={username} onChange={onDataChange} />
         <input
           name="password"
           type="password"
-          value={data.password}
-          onChange={handleChangeInputData}
+          value={password}
+          onChange={onDataChange}
         />
         <input
           name="session"
           type="checkbox"
-          checked={data.session}
-          onChange={handleChangeInputData}
+          checked={session}
+          onChange={onDataChange}
         />
-        <button disabled={!data.username || !data.password} type="submit">
+        <button disabled={!username || !password} type="submit">
           Login
         </button>
 
-        <button onClick={handleReset}>Reset</button>
+        <button onClick={onReset}>Reset</button>
       </form>
     </div>
   );

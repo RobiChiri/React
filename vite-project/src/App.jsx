@@ -1,13 +1,13 @@
 // import { Hello } from "./Hello";
 // import { Welcome } from "./Welcome";
 // import { AlertClock } from "./AlertClock";
-import { Counter } from "./Counter";
+// import { Counter } from "./Counter";
 // import { useState } from "react";
 // import { Clock } from "./Clock";
 // import { LanguageContext } from "./LanguageContext";
 // import { MouseClicker } from "./MouseClicker";
 // import { InteractiveWelcome } from "./InteractiveWelcome";
-// import { Login } from "./Login";
+import { Login } from "./Login";
 // import { UncontrolledForm } from "./UncontrolledForm";
 // import { FocusableInput } from "./FocusableInput";
 // import { StrictModeComponent } from "./StrictModeComponent";
@@ -37,7 +37,7 @@ export function App() {
   // }
   return (
     <div>
-      <Counter />
+      {/* <Counter /> */}
       {/* <GithubUsers /> */}
       {/* <GithubUser username="RobiChiri" /> */}
       {/* <select defaultValue="language">
@@ -50,11 +50,11 @@ export function App() {
       {/* <Hello /> */}
       {/* <Welcome name="John" age={17} /> */}
       {/* <AlertClock eventHandler={handleButtonClick} /> */}
-
-      {/* <MouseClicker />
-      <InteractiveWelcome />
-      <Login onLogin={onLogin} />
-      <UncontrolledForm /> */}
+{/* 
+      <MouseClicker />
+      <InteractiveWelcome /> */}
+      <Login/>
+      {/* <UncontrolledForm /> */}
       {/* <FocusableInput /> */}
       {/* <StrictMode>
         <StrictModeComponent />
